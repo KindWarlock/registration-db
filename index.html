@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style> 
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="form.php" method="POST">
+        <label>
+            Имя: 
+            <input type="text" name="first_name" required>
+        </label>
+        <label>
+            Фамилия:
+            <input type="text" name="last_name" required>
+        </label>
+        <label>
+            E-mail:
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            Телефон:
+            <input type="tel" name="phone" required>
+        </label>
+        <label>
+            Тема:
+            <select name="topic">
+                <option value="1">Бизнес</option>
+                <option value="2">Технологии</option>
+                <option value="3">Реклама и Маркетинг</option>
+            </select>
+        </label>
+        <label>Способ оплаты:
+            <select name="payment">
+                <option value="1">WebMoney</option>
+                <option value="2">Яндекс.Деньги</option>
+                <option value="3">PayPal</option>
+                <option value="4">Кредитная карта</option>
+            </select>
+        </label> 
+        <label>
+            <input type="checkbox" name="news" checked>
+            Хотите ли вы получать рассылку?
+        </label>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
